@@ -14,8 +14,7 @@ html {
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
-  background:radial-gradient(rgb(169, 174, 136), rgba(228, 5, 57, 0.96));
-  /* background-color: #60b347; */
+  background: radial-gradient(rgb(169, 174, 136), rgba(228, 5, 57, 0.96));
 }
 
 /* LAYOUT */
@@ -117,4 +116,68 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+/* ✅ RESPONSIVE STYLING FOR MOBILE */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding-bottom: 4rem;
+  }
+
+  main {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    position: static;
+    transform: none;
+    margin: 2rem 0;
+  }
+
+  .number {
+    font-size: 4rem;
+    width: 12rem;
+    padding: 2rem 0;
+    position: static;
+    transform: none;
+    margin: 2rem auto;
+  }
+
+  .guess {
+    width: 100%;
+    font-size: 3rem;
+    padding: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .again,
+  .between {
+    position: static;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+
+  .message,
+  .label-score {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+  }
 }
